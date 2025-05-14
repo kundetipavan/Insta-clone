@@ -1,0 +1,914 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* instagram login page*/ 
+
+ #faf{
+  display:none ;
+}
+.main{
+    display: flex;
+}
+#aside{
+    background-color: white;
+    width: 17%;
+    height: 100%;
+    position: fixed;
+    border-right: 1px solid rgba(128, 128, 128, 0.315);
+}
+.aside-item{
+    padding: 30px;
+}
+.aside-item ul{
+    list-style: none;
+    margin-top: 30px;
+    line-height: 50px;
+}
+.aside-item ul  li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.aside-item ul li i{
+    font-size: 25px;
+    margin-right: 10px;
+}
+h1{
+    font-family: "Satisfy", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+}
+ /*side---- end-----*/
+ #home{
+    height: 100%;
+    width: 100%;
+    margin-left: 17%;
+    display: flex;
+ }
+ .home1-item{
+    background-color: white;
+    width: 60%;
+ }
+ .wrapper{
+    overflow-x: hidden;
+    max-width: 1000px;
+    position: relative;
+    cursor: pointer;
+    padding: 30px;
+ }
+ .wrapper .icon{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 120px;
+    display: flex;
+    align-items: center;
+ }
+ .wrapper img{
+    border: 3px solid rgba(128, 128, 128, 0.521);
+ }
+ .tab p{
+ font-size: 13px;
+ }
+ .icon:first-child{
+    left: 0;
+ }
+ .icon:last-child{
+    right: 0;
+    justify-content: flex-end;
+ }
+ .icon i{
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 35px;
+     border-radius: 50%;
+    cursor: pointer;
+    background: white;
+}
+.icon:first-child i{
+    margin-left: 15px;
+}
+.icon:last-child i{
+    margin-right: 15px;
+}
+ .wrapper .tabs-box{
+    display: flex;
+    gap: 14px;  
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+ }
+ .tabs-box.dragging{
+    scroll-behavior: auto;
+    cursor: grab;
+ }
+ .tabs-box.dragging .tab{
+    user-select: none;
+ }
+ .home2-item{
+    width: 40%;
+    height: 100%;
+    padding-top: 30px;
+     }
+.cont{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cont .ff{
+    gap: 10px;
+    margin-left: -10px;
+    display: flex;
+}
+.ff h1{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.cont .tt p{
+    font-family: sans-serif;
+    font-size:15px;
+    font-weight: 600;
+    color: rgba(42, 122, 235, 0.832);
+}
+.sug{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+.sug h2{
+    font-size: 15px;
+    color: rgba(61, 61, 61, 0.88);
+    font-family: sans-serif;
+}
+
+.deepu .post-box{
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.deepu .post{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.post .p1{
+    display: flex;
+}
+.text h2{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.text h2 span{
+    color: rgba(74, 73, 73, 0.846);
+    font-size: 18px;
+}
+.post i{
+    font-size: 5px;
+}
+.last {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 25px;
+ }
+.achi{
+    margin-left: -15px;
+}
+.loki{
+    display: flex;
+    gap: 3px;
+}
+.loki i{
+   margin-right: 15px; 
+}
+.devi{
+    display: flex;
+    align-items: center;
+}
+.para pre{
+    font-size: 15px;
+    font-family: sans-serif;
+}
+/* From Uiverse.io by KSAplay */ 
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    transition: 100ms;
+  }
+  
+  .checkmark {
+    top: 0;
+    left: 0;
+    height: 1.5em;
+    width: 1.5em;
+    transition: 100ms;
+    animation: dislike_effect 400ms ease;
+    margin-right: 3px;
+  }
+  
+  .container input:checked ~ .checkmark path {
+    fill: #ff5353;
+    stroke-width: 0;
+  }
+  
+  .container input:checked ~ .checkmark {
+    animation: like_effect 400ms ease;
+  }
+  
+  .container:hover {
+    transform: scale(1.1);
+  }
+  footer{
+    display: none;
+  }
+
+
+
+  /*------profile----*/
+
+
+ 
+#prof{
+  display: none;
+}
+.main{
+    display: flex;
+    margin-top: -20px;
+}
+
+/*---aside end ------*/
+/*--------profiile start ------------*/
+#profile{
+    margin-left: 17%;
+    width: 100%;
+    height: 100%;
+}
+.profile-pic{
+    padding: 5% 10%;
+
+}
+.profile-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: sans-serif;
+    width: 100%;
+    padding: 20px;
+}
+.user{
+    display: flex;
+    gap: 3%;
+}
+.user button{
+    padding: 7px;
+    border: none;
+}
+.posts{
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}
+.posts span{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.posts p{
+    font-size: 18px;
+}
+.profile-item pre{
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.profile-item pre span{
+    font-size: 17px;
+    font-weight: 600;
+}
+/*-------- highlights start ------------*/
+.wrapperr{
+    overflow-x: hidden;
+    max-width: 95%;
+    position: relative;
+    cursor: pointer;
+    padding: 30px;
+ }
+ .wrapperr .icon{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 120px;
+    display: flex;
+    align-items: center;
+ }
+ .wrapperr img{
+    border: 3px solid rgba(128, 128, 128, 0.521);
+ }
+ .tab p{
+ font-size: 13px;
+ }
+ .icon:first-child{
+    left: 0;
+ }
+ .icon:last-child{
+    right: 0;
+    justify-content: flex-end;
+ }
+ .icon i{
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 35px;
+     border-radius: 50%;
+    cursor: pointer;
+    background: white;
+}
+.icon:first-child i{
+    margin-left: 15px;
+}
+.icon:last-child i{
+    margin-right: 15px;
+}
+ .wrapperr .tabs-box{
+    display: flex;
+    gap: 20px;  
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+ }
+ .tabs-box.dragging{
+    scroll-behavior: auto;
+    cursor: grab;
+ }
+ .tabs-box.dragging .tab{
+    user-select: none;
+ }
+ .reels{
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+ }
+ .reels-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+ }
+ .reels-text h1{
+    font-size: 15px;
+    font-family: sans-serif;
+ }
+ .reel-box{
+    margin-top: 20px;
+ }
+ .reel{
+    padding: 10px;
+    margin-top: 10px;
+    gap: 10px;
+    display: flex;
+}
+
+#id{
+  position: absolute;
+  top: 0;
+  left: 17%;
+  height: 100%;
+  display: none;
+  background-color: white;
+  width: 20%;
+  border: none;
+  box-shadow: 2px 1px 2px rgba(71, 65, 65, 0.647);
+  padding: 10px;
+}
+#id #span{
+position: absolute;
+right: 10%;
+}
+
+#search .rec{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+#id input{
+  width: 95%;
+  height: 10%;
+}
+.ent{
+  display: flex;
+  justify-content: space-between;
+}
+.acc{
+  display: flex;
+  justify-content: space-between;
+}
+.acc p{
+  margin-top: -1%;
+}
+
+.faf1{
+  display: none;
+}
+.faf{
+  display: none;
+}
+/*------exlpolre------*/
+
+
+#explore{
+  padding: 20px;
+  display: none;
+  margin-left: 18em;
+  padding-top: 100px;
+}
+.expl{
+  display: flex;
+  justify-content: space-evenly; 
+  padding: 5px 20px; 
+}
+.expl img{
+  width: 380px;
+  height: 400px;
+}
+/*------video------*/
+#reels{
+  margin-left: 30%;
+  display: none;
+  margin-top: 20px;
+}
+#reels .vid{
+  display: flex;
+  gap: 5px;
+  padding-top: 30px;
+  
+}
+.vid1{
+  margin-top: 23%;
+  flex-direction: column;
+  display: flex;
+  font-size: 30px;
+  position: absolute;
+  margin-left: 29%;
+  }
+ .vid1 i{
+  margin-bottom: 25px;
+  
+ }
+ .vid1 svg{
+  margin-left: -5px;
+   }
+  .vid .fa-regular{
+  margin-top: 20px;
+
+ }
+  /*------notification------*/
+
+#notif{
+  width: 25%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  overflow-y: scroll;
+  background-color: white;
+  display: none;
+  top: 0;
+  margin-left: 15%;
+}
+
+.nc{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.im{
+  display: flex;
+}
+.note p span{
+  font-weight: 600;
+}
+.left{
+  margin-left: -20px;
+}
+.note {
+  font-size: 16px;
+}
+.btn{
+  display: flex;
+
+}
+.btn button{
+  font-size: 12px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+  /*------notification---mobile version---*/
+  .nmob{
+    margin-left: 1%;
+    display: none;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+   }
+.nmob .note{
+  margin-right: 2%;
+  display: flex;
+ }
+   /*------messenger------*/
+   #messenger{
+    display:flex ;
+    height: 100%;
+    width: 100%;
+    display:none ;
+
+   }
+   .msg4{
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    margin-left: 47%;
+    position:absolute;
+    top: 1%;
+text-align: center;
+padding-top: 20%;
+   }
+   .msg4 i{
+    font-size: 100px;
+    background-color: rgb(7, 7, 7);
+    color: rgb(255, 251, 251);
+    border-radius: 60%;
+    margin-left: 40px;
+
+    }
+   .msg4 h2{
+    margin-left: 50px;
+   }
+   .msg4 button{
+    height: 30px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: rgba(20, 113, 244, 0.921);
+    margin-top: 1%;
+    border: none;
+    margin-left: 50px;
+
+
+   }
+   .msg4 button:hover{
+    background-color: rgba(15, 81, 172, 0.921);
+   }
+  .msg3{
+    margin-left: 17%;
+   position: absolute;
+   top: 10px;
+   background-color: white;
+  width: 30%;
+  overflow-y: scroll;
+  height: 100%;
+  }
+  .tasg h3 .edit{
+    margin-left: 55%;
+  }
+  .tasg{
+    top: 0;
+    padding: 20px;
+    background-color: aliceblue;
+   position: fixed;
+   width: 29%;
+    
+  }
+  .tasg h3{
+    padding-left: 10px;
+  }
+  .msg{
+    overflow-x: hidden;
+    max-width: 100%;
+    position: relative;
+    cursor: pointer;
+    padding: 30px;
+    margin-top:15%;
+ }
+ .msg .icon{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 120px;
+    display: flex;
+    align-items: center;
+ }
+ .msg img{
+    border: 3px solid rgba(128, 128, 128, 0.521);
+ }
+ .tab p{
+ font-size: 12px;
+ }
+ .icon:first-child{
+    left: 0;
+ }
+ .icon:last-child{
+    right: 0;
+    justify-content: flex-end;
+ }
+ .icon i{
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 35px;
+     border-radius: 50%;
+    cursor: pointer;
+    background: white;
+}
+.icon:first-child i{
+    margin-left: 15px;
+}
+.icon:last-child i{
+    margin-right: 15px;
+}
+ .msg .tabs-box{
+    display: flex;
+    gap: 20px;  
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+ }
+ .tabs-box.dragging{
+    scroll-behavior: auto;
+    cursor: grab;
+ }
+ .tabs-box.dragging .tab{
+    user-select: none;
+ }
+.msg2{
+  padding: 30px;
+}
+.msg2 .con{
+  padding: 1%;
+}
+.msg2 .ff{
+  display: flex;
+}
+.msg2 h1 ,p{
+  margin-left: 10%;
+}
+
+.msg2  .cam {
+  margin-left: 5%;
+  margin-top: 1%;
+  font-size: 20px;
+  gap: 5px;
+}
+.msg2 p{
+  width: 250px;
+}
+   /*------more------*/
+   #more{
+    top: 25%;
+    position: absolute;
+     background-color: white;
+     display: none;
+}
+.more-box{
+    border-radius: 10px;
+    width:100%;
+    margin: 10px;
+    height: 50%;
+    padding: 5px;
+    box-shadow: 0 0 20px rgba(128, 128, 128, 0.462);
+
+}
+.more-item{
+    margin: 3px 10px;
+    display: flex;
+    gap: 20px;
+    padding: 12px;
+    align-items: center;
+}
+.more-item:hover{
+    background-color: rgba(61, 61, 61, 0.216);
+    border-radius: 10px;
+}
+.more-item i{
+    font-size: 20px;
+
+}
+   /*------more---end---*/
+
+
+
+
+
+@media  screen and (max-width:850px){
+  #notif{
+      width: 100%;
+  }
+  
+}
+
+
+@media  screen and (max-width:850px){
+    
+    #aside{
+        display: none;
+    }
+    #profile{
+        margin-left: 0%;
+        width: 100%;
+    }
+    .profile-item pre{
+        font-size: 12px;
+    }
+    .profile-item{
+        display: inline;
+    }
+    .reel{
+        display: block;
+    }
+    .profile-pic{
+        padding: 5%;
+    }
+    .wrapper{
+        padding: 5px;
+    }
+}
+
+  
+  @keyframes like_effect {
+    0% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes dislike_effect {
+    0% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  .me{
+    margin-left: 3px;
+    margin-top: 2px;
+  }
+
+  @media only screen and (max-width:850px){
+ #aside{
+    display: none;
+ }
+ .home2-item{
+    display: none;
+ }
+  .home1-item{
+    background-color: white;
+    width: 100%;
+    margin-bottom: -10px;
+
+}
+.kk{
+  width: 200px;
+}
+.ll{
+    width: 400px;
+    height: 200px;
+}
+ .tabs-box{
+  margin-left: 30px;
+
+}
+.wrapper{
+  width: 450px;
+  margin-left:-5%;
+}
+ .oo{
+  margin-left: 230px;
+}
+#faf{
+  display: block;
+  padding: 5px;
+
+}
+
+#home{
+  margin-left: 0;
+}
+#aside{
+  position: none;
+  margin-left: 0;
+}
+.hr{
+  width: 400px;
+}
+
+
+.mm h2{
+  margin-left: 10px;
+  font-family: "Satisfy", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+}
+.mm{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 25px;
+ }
+footer{
+  display: block;
+  height: 75px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+   background-color: white;
+   width: 100%;
+}
+
+.footer i{
+  font-size: 35px;
+  margin-left: 35px;
+  margin-top: 20px;
+ }
+ .footer .hh{
+  justify-content: space-evenly;
+ }
+ 
+ .deepu .post-box{
+  margin-left: 2%;
+ }
+ .main1{
+  padding: -20px;
+ 
+  }
+  .post-box p{
+  font-size: 10px;
+ }
+ .post-box h2{
+  font-size: 15px;
+ }
+ .post-box h2 span{
+  font-size: 10px;
+ }
+
+ #faf1{
+  display: block;
+ padding: 15px;
+ }
+ .mm{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 25px;
+ }
+  /*prolie-----------------*/
+  .reels .reel{
+    display: flex;    
+  }
+  .reels{
+    margin-bottom: 12%;
+  }
+  .reel img{
+width: 120px;
+height: 100px;
+
+  }
+  #notif{
+  width: 100%;
+  }
+      }
